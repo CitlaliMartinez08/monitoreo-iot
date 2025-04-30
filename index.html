@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Vehículo IoT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Monitoreo de Vehículo IoT</h1>
+        
+        <h3 class="text-center text-primary mb-4" id="statusActual">
+            Estado actual: cargando...
+        </h3>
+    
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center align-middle" id="deviceTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>IP</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="deviceTableBody">
+                    <!-- Filas dinámicas se insertan aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <footer class="text-center p-3 bg-dark text-white mt-auto">
+        Desarrollador por Citlali Martínez
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
